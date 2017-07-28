@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+   <class name="guestuser.UserService" table="userservice">
+      <meta attribute="class-description">
+         This class contains the employee detail. 
+      </meta>
+      <id name="serviceid" type="int" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="reg_no" column="vmodel" type="int"/>
+      <property name="vmodel_no" column="vmodel_no" type="string"/>
+      <property name="type" column="type" type="string"/>
+      <property name="sdate" column="sdate" type="string"/>
+      <property name="status" column="status" type="string"/>
+      <property name="loginuser" column="username" type="string"/>
+   </class>
+
+</hibernate-mapping>
